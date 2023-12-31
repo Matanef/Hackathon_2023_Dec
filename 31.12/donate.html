@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Donate</title>
+</head>
+<body>
+    <div class="donate-container">
+        <h1>Donate to Associations</h1>
+        <label for="search">Search for a Charity:</label>
+        <input type="text" id="search" name="search" oninput="handleSearch()">
+        <div id="slider" class="card-slider">
+            <!-- Slider cards go here -->
+        </div>
+        <div id="charityCard" class="hidden">
+            <img src="charity-logo.jpg" alt="Charity Logo">
+            <input type="number" placeholder="Amount">
+            <button onclick="submitDonation()">Submit</button>
+        </div>
+    </div>
+    <div id="popup" class="popup hidden">
+        <p>Thank you for your donation!</p>
+        <a href="index.html">Back to Home</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.landing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.landing-button {
+    text-decoration: none;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.light-blue {
+    background-color: #5DADE2;
+}
+
+.light-green {
+    background-color: #82E0AA;
+}
+
+.circle:hover {
+    background-color: #3498db;
+}
+
+.circle span {
+    text-align: center;
+}
