@@ -8,21 +8,16 @@
 </head>
 <body>
     <div class="donate-container">
-        <h1>Donate to Associations</h1>
-        <label for="search">Search for a Charity:</label>
-        <input type="text" id="search" name="search" oninput="handleSearch()">
-        <div id="slider" class="card-slider">
-            <!-- Slider cards go here -->
+        <input type="text" id="searchBar" placeholder="Search for a charity...">
+        <div class="slider">
+            <!-- Cards go here -->
+            <!-- Example Card: -->
+            <div class="card">
+                <img src="charity_logo.jpg" alt="Charity Logo">
+                <input type="text" placeholder="Amount">
+                <button onclick="donate()">Submit</button>
+            </div>
         </div>
-        <div id="charityCard" class="hidden">
-            <img src="charity-logo.jpg" alt="Charity Logo">
-            <input type="number" placeholder="Amount">
-            <button onclick="submitDonation()">Submit</button>
-        </div>
-    </div>
-    <div id="popup" class="popup hidden">
-        <p>Thank you for your donation!</p>
-        <a href="index.html">Back to Home</a>
     </div>
     <script src="script.js"></script>
 </body>

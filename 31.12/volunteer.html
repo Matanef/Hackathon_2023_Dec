@@ -4,35 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Volunteer</title>
+    <title>Find Volunteer</title>
 </head>
 <body>
     <div class="volunteer-container">
-        <h1>Find Volunteers by Profession</h1>
-        <label for="professions">Choose a Profession:</label>
-        <select id="professions">
-            <option value="handywork">Handywork</option>
-            <option value="farming">Farming</option>
-            <option value="pet-rescue">Pet Rescue</option>
-            <option value="photography">Photography</option>
-            <option value="shopping">Shopping (for the elderly)</option>
-        </select>
-        <button onclick="showForm()">Submit</button>
-        <form id="volunteerForm" class="hidden">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required>
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" required>
-            <label for="phoneNumber">Phone Number:</label>
-            <input type="tel" id="phoneNumber" name="phoneNumber" required>
-            <label for="issue">Describe the Issue:</label>
-            <textarea id="issue" name="issue" rows="4" required></textarea>
-            <button onclick="saveToTextFile()">Submit</button>
-        </form>
-    </div>
-    <div id="popup" class="popup hidden">
-        <p>Thank you for your submission!</p>
-        <a href="index.html">Back to Home</a>
+        <img src="blacksmith.jpg" alt="Blacksmith's Hands" class="background-image">
+        <div class="form-container">
+            <select id="professionDropdown">
+                <option value="Handywork">Handywork</option>
+                <option value="Farming">Farming</option>
+                <option value="PetRescue">Pet Rescue</option>
+                <option value="Photography">Photography</option>
+                <option value="Shopping">Shopping (for the elderly)</option>
+            </select>
+            <button onclick="showForm()">Submit</button>
+            <form id="contactForm" class="hidden">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone">
+                <label for="issue">Elaborate on the issue:</label>
+                <textarea id="issue" name="issue"></textarea>
+                <button type="button" onclick="submitForm()">Submit</button>
+            </form>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
