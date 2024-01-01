@@ -16,100 +16,38 @@ body {
 }
 
 .circle {
-    width: 150px;
-    height: 150px;
+    width: 175px;
+    height: 175px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
     transition: opacity 0.3s;
 }
 
 .blue-circle {
+    margin-left: 300px;
     background-color: lightblue;
 }
 
 .green-circle {
+    margin-right: 300px;
     background-color: lightgreen;
 }
 
-.circle:hover {
+.blue-circle:hover {
+    background-image: url("c0106900-800px-wm.jpg");
+    background-size: 270px;
     opacity: 0.8;
 }
 
-/* Volunteer Page Styles */
-.volunteer-container {
-    position: relative;
-    text-align: center;
-}
-
-.background-image {
-    width: 100%;
-    height: auto;
-    opacity: 0.5;
-}
-
-.form-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-/* Donate Page Styles */
-.donate-container {
-    text-align: center;
-    padding: 20px;
-}
-
-#searchBar {
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-.slider {
-    display: flex;
-    overflow-x: auto;
-    gap: 10px;
-    justify-content: center;
-}
-
-/* Card Styles */
-.card {
-    background-image: url('charity_background.jpg');
-    background-size: cover;
-    color: white;
-    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.802);
-    transition: 0.3s;
-    width: 330px;
-    height: auto;
-    border-radius: 15px;
-    text-align: center;
-    opacity: 0.8;
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.card input {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
+.green-circle:hover {
+    background-image: url("images.jpg");
+    background-size: 305px;
 }
 
 /* Hidden Class */

@@ -1,0 +1,48 @@
+.donate-container {
+    text-align: center;
+    padding: 20px;
+}
+
+#searchBar {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Card Styles */
+.card {
+    background-image: url('charity_background.jpg');
+    background-size: cover;
+    color: white;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.802);
+    transition: 0.3s;
+    width: 330px;
+    height: auto;
+    border-radius: 15px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}

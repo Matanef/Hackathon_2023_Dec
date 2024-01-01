@@ -1,3 +1,5 @@
+
+
 // Function to show the contact form
 function showForm() {
     const dropdown = document.getElementById('professionDropdown');
@@ -30,14 +32,12 @@ function submitForm() {
     a.download = 'information.txt';
     a.click();
 
-    // You can also send the data to a server using AJAX or fetch for real-world scenarios
 
-    // Reset the form
     form.reset();
 }
 
-// Function to handle donation
+
 function donate() {
-    // Handle donation logic here
+    const userInput = document.getElementById('userAmount').value
     alert('Donation submitted!');
 }

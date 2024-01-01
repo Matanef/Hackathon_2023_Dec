@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="volunteer.css">
     <title>Find Volunteer</title>
 </head>
 <body>
     <div class="volunteer-container">
-        <img src="blacksmith.jpg" alt="Blacksmith's Hands" class="background-image">
+        <img src="1000_F_134195675_UmTo0ZikCiMZs5ptNgzODse235Ak4RsP.jpg" alt="Blacksmith's Hands" class="background-image">
         <div class="form-container">
             <select id="professionDropdown">
+                <option value="RefugeesHousing">Refugees Housing</option>
+                <option value="Moving">Moving</option>
                 <option value="Handywork">Handywork</option>
                 <option value="Farming">Farming</option>
                 <option value="PetRescue">Pet Rescue</option>
@@ -24,13 +26,17 @@
                 <label for="lastName">Last Name:</label>
                 <input type="text" id="lastName" name="lastName">
                 <label for="phone">Phone Number:</label>
-                <input type="text" id="phone" name="phone">
+                <input type="text" id="phone" name="phone"></br>
                 <label for="issue">Elaborate on the issue:</label>
                 <textarea id="issue" name="issue"></textarea>
                 <button type="button" onclick="submitForm()">Submit</button>
             </form>
         </div>
     </div>
-    <script src="script.js"></script>
+    <footer id="footer">
+        <a href="http://127.0.0.1:5500/Hackathon/31.12/index.html">Back Home</a>
+    </footer>
+
+    <script src="volunteer.js"></script>
 </body>
 </html>
