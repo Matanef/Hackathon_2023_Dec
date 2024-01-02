@@ -3,12 +3,6 @@
     text-align: center;
 }
 
-.background-image {
-    width: 100%;
-    height: auto;
-    opacity: 0.5;
-}
-
 .form-container {
     position: absolute;
     top: 25%;
@@ -22,6 +16,15 @@
     display: none;
 }
 
-#footer{
+.background-image {
+border-radius: 12px;
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
+
+
+#a{
     margin-top: -550px;
 }
