@@ -3,7 +3,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Landing Page Styles */
 .landing-container {
     display: flex;
     justify-content: space-around;
@@ -32,6 +31,7 @@ body {
 .blue-circle {
     margin-left: 300px;
     background-color: lightblue;
+    position: relative;
 }
 
 .green-circle {
@@ -50,7 +50,36 @@ body {
     background-size: 305px;
 }
 
-/* Hidden Class */
 .hidden {
     display: none;
 }
+
+
+
+  @keyframes square-to-circle {
+    0%  {
+      border-radius:0 0 0 0;
+      background:coral;
+      transform:rotate(0deg);
+    }
+    25%  {
+      border-radius:50% 0 0 0;
+      background:darksalmon;
+      transform:rotate(90deg);
+    }
+    50%  {
+      border-radius:50% 50% 0 0;
+      background:indianred;
+      transform:rotate(180deg);
+    }
+    75%  { 
+      border-radius:50% 50% 50% 0;
+      background:lightcoral;
+      transform:rotate(270deg);
+    }
+    100% {  
+      border-radius:50%;
+      background:darksalmon;
+      transform:rotate(360deg);
+    }
+  }  
