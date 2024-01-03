@@ -1,4 +1,10 @@
-var swiper = new Swiper(".slide-container.swiper", {
+function something(){
+  console.log("Working");
+}
+something()
+
+
+var swiper = new Swiper(".swiper", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
