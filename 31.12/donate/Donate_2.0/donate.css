@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+  min-height: 100vh;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #EFEFEF;
+}
+h1{
+    margin-bottom: 40px;
+    font-size: 46px;
+}
+.cause{
+    margin-bottom: 120px;
+    font-size: 24px;
+}
+
+.slide-container{
+    max-width: 1520px;
+    width: 100%;
+    background-color: grey;
+    padding: 40px 0;
+    margin-top: 25px;
+}
+.donatto{
+    margin-left: 24px;
+    margin-bottom: 24px;
+}
+.slide-content{
+    margin: 0 40px;
+}
+
+.card{
+    width: 550px;
+    border-radius: 25px;
+    background-color: #FFF;
+    /* border: 1px solid black; */
+}
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10px 14px;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 25px 25px 25px;
+
+}
+.overlay{
+    border-radius: 25px 25px 0 0;
+    position: absolute;
+    left:0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070F4;
+}
+/* .overlay::before,
+.overlay::after{
+    content: '';
+    position:absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #265DF2;
+} */
+/* .overlay::after{
+    border-radius: 0 25% 0 0;
+    background-color: #FFF;
+} */
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10px 14px;
+}
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid#4070F4;
+}
+.name{
+    font-size: 24px;
+    font-weight: bold;
+    color: #3333;
+}
+.discription{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+.button{
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: #4070F4;
+    margin: 14px;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+
+}
+.button:hover{
+    background: #265DF2;
+}
