@@ -1,3 +1,7 @@
+img {
+    width: 45px;
+    height: auto;
+}
 .donate-container {
     text-align: center;
     padding: 20px;
@@ -18,12 +22,12 @@
 
 /* Card Styles */
 .card {
-    background-image: url('charity_background.jpg');
+    background-color: rgb(255, 253, 250);
     background-size: cover;
     color: white;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.802);
     transition: 0.3s;
-    width: 330px;
+    width: 250px;
     height: auto;
     border-radius: 15px;
     text-align: center;
@@ -42,6 +46,11 @@
 }
 
 .card input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+#kind {
     width: 80%;
     padding: 10px;
     margin: 10px 0;
